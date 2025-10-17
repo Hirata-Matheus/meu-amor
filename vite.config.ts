@@ -12,7 +12,8 @@ export default defineConfig({
     vueDevTools(),
     nightwatchPlugin(),
   ],
-  base: process.env.NODE_ENV === 'production' ? '/meu-amor/' : '/',
+  // Use '/' para Netlify, '/meu-amor/' para GitHub Pages
+  base: process.env.NETLIFY ? '/' : '/meu-amor/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
