@@ -12,6 +12,7 @@ export default defineConfig({
     vueDevTools(),
     nightwatchPlugin(),
   ],
+  base: '/meu-amor/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
