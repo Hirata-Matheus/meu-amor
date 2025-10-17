@@ -12,7 +12,7 @@ export default defineConfig({
     vueDevTools(),
     nightwatchPlugin(),
   ],
-  base: process.env.NODE_ENV === 'production' ? '/great-memories/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/meu-amor/' : '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
