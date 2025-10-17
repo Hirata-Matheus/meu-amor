@@ -52,11 +52,8 @@ const showError = (message: string) => {
       <div class="text-center mb-8">
         <div class="text-6xl mb-4 animate-pulse">💕</div>
         <h1 class="text-4xl font-romantic font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-rose-400 to-purple-400 mb-2">
-          Nossa História
+          Nossa História 💖
         </h1>
-        <p class="text-pink-300 text-lg">
-          Quando começou nosso amor? 💖
-        </p>
       </div>
 
       <form @submit.prevent="handleSubmit" class="space-y-6">
@@ -72,8 +69,8 @@ const showError = (message: string) => {
             :class="[
               'w-full px-4 py-3 rounded-xl border-2 transition-all duration-300 text-center text-lg font-semibold',
               'focus:outline-none focus:ring-4 focus:ring-pink-300/50',
-              errorMessage 
-                ? 'border-red-400 bg-red-50' 
+              errorMessage
+                ? 'border-red-400 bg-red-50'
                 : 'border-pink-300 bg-white/90 focus:border-pink-400',
               isShaking ? 'animate-shake' : ''
             ]"
@@ -112,7 +109,7 @@ const showError = (message: string) => {
   backdrop-filter: blur(20px);
   border-radius: 2rem;
   padding: 3rem 2rem;
-  box-shadow: 
+  box-shadow:
     0 20px 60px rgba(255, 105, 180, 0.3),
     0 0 40px rgba(219, 112, 147, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
